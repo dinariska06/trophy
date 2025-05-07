@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Trophy - Produk</title>
+  <style>
+    body { background-color: #1c1c1c; color: #ccc; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0; }
+    header, footer { background-color: #3b0066; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    #cart-icon { display: inline-block; cursor: pointer; }
+    main { padding: 20px; }
+    .produk-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px; }
+    .produk-item { background: #2c2c2c; padding: 10px; border-radius: 10px; text-align: center; }
+    .produk-item img { width: 100%; border-radius: 5px; }
+    button { background-color: #6a0dad; border: none; color: white; padding: 10px 15px; margin-top: 10px; cursor: pointer; border-radius: 5px; }
+    button:hover { background-color: #8a2be2; }
+  </style>
+</head>
+
+<script>
+    let cart = 0;
+    function addToCart(productName) {
+      cartCount++;
+      document.getElementById('cart-count').innerText = cartCount;
+      alert(productName + ' berhasil ditambahkan ke keranjang!');
+    }
+  </script>
+  
+<body>
+  <header>
+    <h1>Top Trophy</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pengembang.html">Pengembang</a>
+      <a href="https://forms.gle/mkwhK9UCEYHWXHCD9" target="_blank" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒<span id="cart-count">0</span>
+      </a>
+    </nav>    
+  </header>
+
+  <main>
+    <section class="produk">
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="images/piala 1.jpeg" alt="Tropi Juara 1">
+          <h3>Tropi Futsal</h3>
+          <button onclick="addToCart('Tropi Juara 1')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala 2.jpeg" alt="Tropi Juara 2">
+          <h3>Tropi Bupati</h3>
+          <button onclick="addToCart('Tropi Juara 2')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala 3.jpeg" alt="Tropi Juara 3">
+          <h3> Sepak Bola</h3>
+          <button onclick="addToCart('Tropi Juara 3')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala 4.jpeg" alt="Medali Emas">
+          <h3> Sepak Bola</h3>
+          <button onclick="addToCart('Medali Emas')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala ganti.png" alt="Medali Perak">
+          <h3> Tenis Meja</h3>
+          <button onclick="addToCart('Medali Perak')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala 6.jpeg" alt="Medali Perunggu">
+          <h3>Sepak Bola</h3>
+          <button onclick="addToCart('Medali Perunggu')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/piala 7.jpeg" alt="Piagam Penghargaan 1">
+          <h3>Tropi Dakon</h3>
+          <button onclick="addToCart('Piagam Penghargaan 1')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 1.jpeg" alt="Piagam Penghargaan 2">
+          <h3>Vandel UB</h3>
+          <button onclick="addToCart('Piagam Penghargaan 2')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 2.jpeg" alt="Piagam Penghargaan 3">
+          <h3>Vandel KKN</h3>
+          <button onclick="addToCart('Piagam Penghargaan 3')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 3.jpeg" alt="Vandel Kayu">
+          <h3>Vandel unisba</h3>
+          <button onclick="addToCart('Vandel Kayu')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 4.jpeg" alt="Vandel Akrilik">
+          <h3>Vandel KKN</h3>
+          <button onclick="addToCart('Vandel Akrilik')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 5.jpeg" alt="Vandel Marmer">
+          <h3>Vandel UB</h3>
+          <button onclick="addToCart('Vandel Marmer')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 6.jpeg" alt="Tropi Custom 1">
+          <h3>Vandel UB</h3>
+          <button onclick="addToCart('Tropi Custom 1')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/vandel 7.jpeg" alt="Tropi Custom 2">
+          <h3>Vandel UB</h3>
+          <button onclick="addToCart('Tropi Custom 2')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 1.jpeg" alt="Tropi Custom 3">
+          <h3>Medal Barada cup</h3>
+          <button onclick="addToCart('Tropi Custom 3')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 2.jpeg" alt="Tropi Kejuaraan Antar Kota">
+          <h3>Medal Futsal cup</h3>
+          <button onclick="addToCart('Tropi Kejuaraan Antar Kota')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 3.jpeg" alt="Medali Olahraga">
+          <h3>Medal football</h3>
+          <button onclick="addToCart('Medali Olahraga')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 4.jpeg" alt="Piagam Akademik">
+          <h3>Medal Wisuda</h3>
+          <button onclick="addToCart('Piagam Akademik')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 5.jpeg" alt="Vandel Akrilik Premium">
+          <h3>Medal Purnawiyata</h3>
+          <button onclick="addToCart('Vandel Akrilik Premium')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 6.jpeg" alt="Tropi Turnamen Futsal">
+          <h3>Medal Purnawiyata</h3>
+          <button onclick="addToCart('Tropi Turnamen Futsal')">Tambah ke Keranjang</button>
+        </div>
+        <div class="produk-item">
+          <img src="images/medal 7.jpeg" alt="Medali Kejuaraan Nasional">
+          <h3>Medal Purnawiyata</h3>
+          <button onclick="addToCart('Medali Kejuaraan Nasional')">Tambah ke Keranjang</button>
+        </div>        
+      </div>
+    </section>
+  </main>
+  
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Top Trophy | <a href="https://www.instagram.com/toptrophy.blitar/" target="_blank">Instagram</a> | <a href="https://wa.me/6281333864502" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let cartCount = 0;
+      const cartCountDisplay = document.getElementById('cart-count');
+  
+      function updateCart(itemName) {
+        cartCount++;
+        cartCountDisplay.textContent = cartCount;
+        alert(`${itemName} berhasil ditambahkan ke keranjang!`);
+      }
+  
+      // Tambahkan event listener ke semua tombol tambah ke keranjang
+      const buttons = document.querySelectorAll('button[onclick^="addToCart"]');
+      buttons.forEach(button => {
+        const itemName = button.getAttribute('onclick').match(/addToCart\('(.+)'\)/)[1];
+        button.removeAttribute('onclick'); // hapus atribut lama
+        button.addEventListener('click', () => updateCart(itemName)); // pasang event listener baru
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Trophy - Pengembang</title>
+  <style>
+    body { background-color: #1c1c1c; color: #ccc; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0; }
+    header, footer { background-color: #3b0066; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    #cart-icon { display: inline-block; cursor: pointer; }
+    main { padding: 20px; }
+    .tim { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; margin-top: 20px; }
+    .anggota { background: #2c2c2c; padding: 10px; border-radius: 10px; text-align: center; }
+    .anggota img { width: 100%; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Trophy</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pengembang.html">Pengembang</a>
+      <a href="https://forms.gle/mkwhK9UCEYHWXHCD9" target="_blank" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒<span id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pengembang">
+      <h2>Tim Kami</h2>
+      <div class="tim">
+        <div class="anggota">
+          <img src="images/davin.jpeg" alt="Anggota 1">
+          <h3>Davin Sukma Aditya</h3>
+          <a href="https://davinsukmaaditya05.github.io/PORTOFOLIO/aboutme.html" target="_blank">Portofolio Davin</a>
+        </div>
+        <div class="anggota">
+          <img src="images/awalun.jpg" alt="Anggota 1">
+          <h3>Awalun Nisa' Isro'in Nazilla</h3>
+          <a href="file:///D:/project%20p.web/portofolio%20awalun/home.html" target="_blank">Portofolio Awalun</a>
+        </div>
+        <div class="anggota">
+          <img src="images/ella.jpeg" alt="Anggota 1">
+          <h3>Ariella Eka Aurelyn</h3>
+          <a href="https://ella2408.github.io/Repository-Ella/tentang%20saya.html" target="_blank">Portofolio Ariella</a>
+        </div>
+        <div class="anggota">
+          <img src="images/dina.png" alt="Anggota 1">
+          <h3>Dina Riska Nasrilla</h3>
+          <a href="file:///D:/project%20p.web/portofolio%20web/aboutme.html" target="_blank">Portofolio Dina</a>
+        </div>
+        <div class="anggota">
+          <img src="images/celsi.jpeg" alt="Anggota 1">
+          <h3>Chelsea Luckyta Maharani</h3>
+          <a href="file:///D:/project%20p.web/CHELSEA/home.html" target="_blank">Portofolio Chelsea</a>
+        </div>
+        <div class="anggota">
+          <img src="images/andi.jpg" alt="Anggota 1">
+          <h3>Andi Bagus Cahyono</h3>
+          <a href="https://andi781.github.io/portofolio/home.html" target="_blank">Portofolio Andi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Top Trophy | <a href="https://www.instagram.com/toptrophy.blitar/" target="_blank">Instagram</a> | <a href="https://wa.me/6281333864502" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <script>
+    let cartCount = 0;
+  </script>
+</body>
+</html>

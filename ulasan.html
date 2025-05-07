@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Trophy - Ulasan</title>
+  <style>
+    body { background-color: #1c1c1c; color: #ccc; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0; }
+    header, footer { background-color: #3b0066; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    #cart-icon { display: inline-block; cursor: pointer; }
+    main { padding: 20px; }
+    textarea {display:block; width: 100%; height: 200px; padding: 20px; margin: 30px 0; border-radius: 15px; border: none; box-sizing: border-box; resize: vertical;}
+    button { background-color: #6a0dad; border: none; color: white; padding: 10px 15px; margin-top: 10px; cursor: pointer; border-radius: 15px; }
+    button:hover { background-color: #8a2be2; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Trophy</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pengembang.html">Pengembang</a>
+      <a href="https://forms.gle/mkwhK9UCEYHWXHCD9" target="_blank" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒<span id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ulasan">
+      <h2>Tulis Ulasan Anda</h2>
+      <form id="ulasan-form">
+        <textarea placeholder="Tulis ulasan anda disini..." required></textarea>
+        <input type="file" id="foto-upload" accept="image/*">
+        <button type="submit">Kirim</button>
+      </form>  
+      <div id="daftar-ulasan"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Top Trophy | <a href=https://www.instagram.com/toptrophy.blitar/ target="_blank">Instagram</a> | <a href="https://wa.me/6281333864502" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <script>
+    let cartCount = 0;
+    document.getElementById('ulasan-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      const textarea = this.querySelector('textarea');
+      const fotoInput = document.getElementById('foto-upload');
+      const daftarUlasan = document.getElementById('daftar-ulasan');
+  
+      // Buat container ulasan
+      const reviewContainer = document.createElement('div');
+      reviewContainer.style.marginBottom = "20px";
+  
+      // Tambahkan komentar
+      const newReview = document.createElement('p');
+      newReview.textContent = textarea.value;
+      reviewContainer.appendChild(newReview);
+  
+      // Tambahkan gambar jika ada
+      const file = fotoInput.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          img.style.maxWidth = "200px";
+          img.style.display = "block";
+          img.style.marginTop = "10px";
+          img.style.borderRadius = "10px";
+          reviewContainer.appendChild(img);
+        }
+        reader.readAsDataURL(file);
+      }
+  
+      daftarUlasan.appendChild(reviewContainer);
+  
+      // Reset form
+      textarea.value = '';
+      fotoInput.value = '';
+    });
+  </script>    
+</body>
+</html>

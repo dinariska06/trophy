@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Trophy - Home</title>
+  <style>
+    body { background-color: #1c1c1c; color: #f8f8f8; font-family: Georgia, 'Times New Roman', Times, serif; margin: 0; background-image: url(logo.jpg) }
+    header, footer { background-color: #3b0066; color: white; padding: 15px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    #cart-icon { display: inline-block; cursor: pointer; }
+    main { padding: 20px; }
+    .home { display: flex; align-items: flex-start; gap: 20px; flex-wrap: wrap; }
+    .home img { width: 300px; border-radius: 15px; flex-shrink: 0; }
+    .home .keterangan { margin-top: 0; color: white; max-width: 800px; }
+    button { background-color: #6a0dad; border: none; color: white; padding: 10px 15px; margin-top: 10px; cursor: pointer; border-radius: 5px; }
+    button:hover { background-color: #8a2be2; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Trophy</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="ulasan.html">Ulasan</a>
+      <a href="pengembang.html">Pengembang</a>
+      <a href="https://forms.gle/mkwhK9UCEYHWXHCD9" target="_blank" id="cart-icon" style="text-decoration: none; color: white;">
+        🛒<span id="cart-count">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <img src="images/pemilik top trophy.jpg" alt="Pemilik Top Trophy">
+      <div class="keterangan">
+        <h2>Tentang Top Trophy</h2>
+        <p>Top Trophy: Solusi Terbaik untuk Kebutuhan Penghargaan Anda</p>
+        <p>Top Trophy adalah toko terpercaya yang berdedikasi dalam menyediakan berbagai jenis tropi, medali, piagam, dan vandel berkualitas tinggi untuk memenuhi kebutuhan apresiasi di berbagai momen penting. Dengan pengalaman dan komitmen tinggi terhadap kualitas, kami menjadi pilihan utama bagi sekolah, instansi, organisasi, hingga komunitas yang mengutamakan produk terbaik dalam setiap bentuk penghargaan.</p>
+        <p>Didirikan dan dikelola oleh Bapak Suprianto Akbar, Top Trophy tumbuh dengan visi untuk menjadi mitra andalan dalam menciptakan momen tak terlupakan. Kami memahami bahwa setiap penghargaan memiliki nilai emosional dan simbolis yang besar. Oleh karena itu, kami selalu mengutamakan detail dan kualitas dalam setiap produk yang kami tawarkan.</p>
+        <p>Layanan kami fleksibel dan modern: pelanggan dapat melakukan pemesanan secara online maupun offline sesuai kebutuhan. Untuk kemudahan transaksi, kami juga melayani sistem pembayaran tunai (cash), transfer bank via BRI, maupun sistem COD (Cash On Delivery) bagi pelanggan di area tertentu. Produk kami dapat dikirim ke seluruh penjuru Indonesia, dan kami siap mengantarkan langsung ke alamat tujuan Anda dengan pelayanan yang ramah dan tepat waktu.</p>
+        <p>Selain itu, kami menyediakan opsi desain khusus (custom) sesuai permintaan pelanggan — baik itu bentuk tropi unik, ukiran nama pemenang, hingga logo organisasi. Tim kami akan memastikan setiap pesanan dikerjakan dengan presisi dan dikirim dalam kondisi terbaik.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Top Trophy | <a href="https://www.instagram.com/toptrophy.blitar/" target="_blank">Instagram</a> | <a href="https://wa.me/6281333864502" target="_blank">WhatsApp</a></p>
+  </footer>
+
+  <script>
+    let cartCount = 0;
+    function addToCart(item) {
+      cartCount++;
+      document.getElementById('cart-count').innerText = cartCount;
+      alert(item + ' berhasil ditambahkan ke keranjang!');
+    }
+  </script>
+</body>
+</html>
